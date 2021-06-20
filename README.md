@@ -1,4 +1,4 @@
-# rsschool2021-Android-task-quiz
+# RS.School2021-Android-Task-Quiz
 Rolling Scopes School - Android 2021 - Stage 1 - Task 2 - Quiz
 
 :point_up: Во втором практическом задании создадим приложение-квиз, с возможностью шарить результат
