@@ -56,7 +56,7 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="16dp" />
+                app:layout_constraintGuide_begin="32dp" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/margin_bottom_guideline"
@@ -80,6 +80,7 @@
                 android:id="@+id/radio_group"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="@id/margin_end_guideline"
                 app:layout_constraintStart_toStartOf="@id/margin_start_guideline"
                 app:layout_constraintTop_toBottomOf="@id/question">
@@ -88,6 +89,7 @@
                     android:id="@+id/option_one"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="One"
                     tools:text="Option 1" />
 
                 <RadioButton
@@ -106,9 +108,9 @@
                     android:id="@+id/option_four"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:checked="true"
                     tools:text="Option 4" />
 
+                <!--   tools:checked="true"-->
                 <RadioButton
                     android:id="@+id/option_five"
                     android:layout_width="wrap_content"
@@ -124,7 +126,7 @@
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Previous"
+        android:text="@string/previous"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -133,8 +135,12 @@
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Next"
+        android:clickable="false"
+        android:text="@string/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--        app:backgroundTint="@null"-->
+    <!--            android:background="@drawable/bg_nextbutton_rg_checked"-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
