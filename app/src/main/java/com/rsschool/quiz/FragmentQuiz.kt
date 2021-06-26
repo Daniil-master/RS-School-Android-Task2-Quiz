@@ -25,14 +25,20 @@ class FragmentQuiz : Fragment() {
 
     // ЛОГИКА
     // Вопросы, кол-во вопросв, ответы и правльные ответы
-    private val questions = arrayOf("1 ", "2 ", "3 ", "4 ", "5 ") // вопросы
+    private val questions = arrayOf(
+        "Платформа Андроид основывается на операционной системе:",
+        "Как называется Java виртуальная машина платформы Андроид:",
+        "Что представляет собой формат APK?",
+        "Файлы ресурсов Layout должны размещаться в папке:",
+        "Для чего предназначено файловое расширение. apk?"
+    ) // вопросы
     private val cntQuestions = questions.size // кол-во вопросов
     private val answer = arrayOf( // ответы, сколько вопросов и Radio кнопок - столько же ответов
-        arrayOf("1 ", "2 ", "3 ", "4 ", "5 "),
-        arrayOf("1 ", "2 ", "3 ", "4 ", "5 "),
-        arrayOf("1 ", "2 ", "3 ", "4 ", "5 "),
-        arrayOf("1 ", "2 ", "3 ", "4 ", "5 "),
-        arrayOf("1 ", "2 ", "3 ", "4 ", "5 ")
+        arrayOf("Linux", "MAC", "Unix", "Windows CE", "Windows XP"),
+        arrayOf(".NET Framework", "Dalvik", "Forth Virtual Machine", "Juke Virtual Machine", "Parrot Virtual Machine"),
+        arrayOf("Андроид файл контента", "Андроид файл данных", "Андроид файл пакета", "Андроид файл ресурсов", "Ничего из выше перечисленного"),
+        arrayOf("/res/", "/res/anim", "/res/drawable", "/res/layout", "/res/jpg"),
+        arrayOf("Arch Package", "Application Program Kit", "Android Proprietary Kit", "Android Package", "Application Package")
 
     )
 
