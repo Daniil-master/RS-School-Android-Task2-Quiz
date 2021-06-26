@@ -186,7 +186,7 @@ class FragmentQuiz : Fragment() {
         if (getNumAnswer() == -1)
             nextButton?.isEnabled = false // делаем кнопку Next не активной
 
-        radioGroup?.setOnCheckedChangeListener { _, idRB -> // тут было: radioGroup, idRB
+        radioGroup?.setOnCheckedChangeListener { _, _ -> // тут было: radioGroup, idRB
             if (getNumAnswer() != -1) // При данном ответе будет кнопка актиная
                 nextButton?.isEnabled = true // делаем кнопку Next активной
 
