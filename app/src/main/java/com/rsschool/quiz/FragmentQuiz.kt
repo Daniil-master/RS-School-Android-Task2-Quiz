@@ -246,7 +246,7 @@ class FragmentQuiz : Fragment() {
                 val result: Int // результат в проценте
                 var countRight = 0 // кол-во правильных ответов
                 val namesDoneAnswers = Array(cntQuestions, { "" }) // имена
-                for (i in 0 until cntQuestions) { // TODO -> Если что перенести логику в Activity
+                for (i in 0 until cntQuestions) {
                     if (giveNumAnswers[i] == rightAnswer[i])
                         countRight++
                     namesDoneAnswers[i] = answer[i][giveNumAnswers[i]]
