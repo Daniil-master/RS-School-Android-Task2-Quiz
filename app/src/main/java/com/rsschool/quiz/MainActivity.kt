@@ -5,6 +5,7 @@ import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import kotlin.system.exitProcess
 
 
 class MainActivity : AppCompatActivity(), FragmentQuizOnClick, FragmentResultOnClick {
@@ -90,7 +91,11 @@ class MainActivity : AppCompatActivity(), FragmentQuizOnClick, FragmentResultOnC
     override fun onBackPressed() {
         if (fragmentResult?.isResumed == true) { // проверяем что Fragment Result активен (работает)
             if (isClose) // при получении указания закрыть, вызываем наследуемую функцию
-                super.onBackPressed()
+            {
+                finish()
+                exitProcess(0)
+            }
+//                finishAffinity()
             else { // при получении указание не закрывать
                 // при нажатие Заново - обнуление результатов и заново открываем викторину
                 NamePublic.cntRunQuiz = -1
